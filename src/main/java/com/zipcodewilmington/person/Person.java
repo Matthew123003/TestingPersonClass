@@ -66,4 +66,37 @@ public class Person {
     public void setEyeColor(String eyeColor){
         this.eyeColor = eyeColor;
     }
+
+    public boolean getCanSee(){
+        return canSee;
+    }
+
+    public void setCanSee(boolean canSee){
+        this.canSee = canSee;
+    }
+
+    public char getMiddleInit(){
+        return middleInit;
+    }
+
+    public void setMiddleInit(char middleInit){
+        this.middleInit = middleInit;
+    }
+
+    public String getLName(){
+        return lName;
+    }
+
+    public void setLName(String lName){
+        this.lName = lName;
+    }
+
+    public boolean getJR(){
+        return jr;
+    }
+
+    public void setJR(boolean jr){
+        this.jr = jr;
+    }
+
 }

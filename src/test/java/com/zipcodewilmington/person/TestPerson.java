@@ -69,6 +69,38 @@ public class TestPerson {
     }
 
     @Test
+    public void testConstructorWithAllInputs() {
+        // Given
+        Integer expectedAge = 5;
+        String expectedName = "Leon";
+        String expectedEyeColor = "Green";
+        Boolean expectedCanSee = true;
+        Character expectedMiddleInit = 'J';
+        String expectedLName = "Parker";
+        Boolean expectedJR = true;
+
+        // When
+        Person person = new Person(expectedName, expectedAge, expectedEyeColor, expectedCanSee, expectedMiddleInit, expectedLName, expectedJR);
+
+        // Then
+        Integer actualAge = person.getAge();
+        String actualName = person.getName();
+        String actualEyeColor = person.getEyeColor();
+        Boolean actualCanSee = person.getCanSee();
+        Character actualMiddleInit = person.getMiddleInit();
+        String actualLName = person.getLName();
+        Boolean actualJR = person.getJR();
+
+        Assert.assertEquals(expectedAge, actualAge);
+        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(expectedEyeColor, actualEyeColor);
+        Assert.assertEquals(expectedCanSee, actualCanSee);
+        Assert.assertEquals(expectedMiddleInit, actualMiddleInit);
+        Assert.assertEquals(expectedLName, actualLName);
+        Assert.assertEquals(expectedJR, actualJR);
+    }
+
+    @Test
     public void testSetName() {
         // Given
         Person person = new Person();
@@ -95,5 +127,5 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
-    
+
 }
