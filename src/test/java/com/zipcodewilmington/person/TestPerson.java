@@ -128,4 +128,74 @@ public class TestPerson {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSetEyeColor(){
+        //Given
+        Person person = new Person();
+        String expected = "Green";
+
+        //When
+        person.setEyeColor(expected);
+
+        //Then
+        String actual = person.getEyeColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetCanSee(){
+        //Given
+        Person person = new Person();
+        Boolean expected = true;
+
+        //When
+        person.setCanSee(expected);
+
+        //Then
+        Boolean actual = person.getCanSee();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetMiddleInit(){
+        //Given
+        Person person = new Person();
+        Character expected = 'J';
+
+        //When
+        person.setMiddleInit(expected);
+
+        //Then
+        Character actual = person.getMiddleInit();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetLName(){
+        //Given
+        Person person = new Person();
+        String expected = "Parker";
+
+        //When
+        person.setLName(expected);
+
+        //Then
+        String actual = person.getLName();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetJR(){
+        //Given
+        Person person = new Person();
+        Boolean expected = false;
+        
+        //When
+        person.setJR(expected);
+
+        //Then
+        Boolean actual = person.getJR();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
